@@ -5,3 +5,13 @@ let compliment = function (msg) {
 };
 let comp = compliment("You are awesome");
 console.log(comp("Dev"));
+// Example 2
+function makeFunc(){
+    const name="Dev Raj";
+    function displayName(){
+        console.log(name);
+    }
+    return displayName;
+}
+const myFunc=makeFunc();
+myFunc();

@@ -6,6 +6,7 @@ let parentElement=document.querySelector('.content2');
 We can not run forEach Method on HTMLCollections, that is why, we need to convert it into an array first.
 */
 Array.from(parentElement.children).forEach((elem)=>{
+    console.log(elem);
     elem.classList.add("newCoders");
 })
 // Child Elements

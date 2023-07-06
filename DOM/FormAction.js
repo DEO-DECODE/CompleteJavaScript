@@ -4,16 +4,16 @@ let formQs=document.querySelector('.sign-up-Form');
 let email=document.querySelector('#email');
 let password=document.querySelector('#password')
 let passwordPattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,15}$"
-// Carrot ka matlab start and d ollar ka mtlb end.
+// Carrot ka matlab start and dollar ka mtlb end.
 let emailPattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
 //  This will run for submit.
 formQs.addEventListener('submit', (e)=>{
     e.preventDefault();
     // Accessing by Name.
     /*
-    Form parent element tha, user and Password ka. hm uski ander ki sari property ko access kr paa rhein.
+    Form parent element tha, email and Password ka. hm uski ander ki sari property ko access kr paa rhein.
     */
-    // console.log(formQs.userEmail.value+" "+ formQs.userPassword.value);
+    console.log(formQs.userEmail.value+" "+ formQs.userPassword.value);
     // console.log(email.value, password.value);
     // Validating Password
     // let passwordValue=password.value;
@@ -40,15 +40,14 @@ formQs.addEventListener('submit', (e)=>{
 The target property returns the element where the event occured.
 */
 // KeyBoard events
-// Live Feedback
-email.addEventListener('keyup', (e)=>{
-    let curUserName=e.target.value;
-    let result2=curUserName.match(emailPattern);
-    if(result2){
-        email.setAttribute('class', 'success');
-    }
-    else{
-        email.setAttribute('class', 'error');
-    }
-})
+// email.addEventListener('keyup', (e)=>{
+//     let curUserName=e.target.value;
+//     let result2=curUserName.match(emailPattern);
+//     if(result2){
+//         email.setAttribute('class', 'success');
+//     }
+//     else{
+//         email.setAttribute('class', 'error');
+//     }
+// })
 // Here we are changing style by changing the class.

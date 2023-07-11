@@ -1,7 +1,11 @@
 let todos = (callback) => {
-  // Making HTTO Request
+  // Making HTTP Request
   let request = new XMLHttpRequest();
-  // XMLHttpRequest is a constructor
+  /*
+   XMLHttpRequest is a constructor
+   All modern browsers have a built-in XMLHttpRequest object to request data from a server.
+   The XMLHttpRequest object can be used to request data from a web server.
+  */
   console.log(request);
   // Setting up the request
   request.open("Get", "https://jsonplaceholder.typicode.com/todos");
@@ -10,31 +14,30 @@ let todos = (callback) => {
   // Sending the request.
   request.send();
   // This will send the request to server.
-
-  // We can directly see it's response in the console.
+  // We can directly see it's response in the console in the network.
   // In order to fetch the response, we need to set an eventListener .
+  // readystatechange naam ka ek eventlistener generate hota hai, response ke aane se. 
   request.addEventListener("readystatechange", () => {
     // console.log(request, request.readyState);
     if (request.readyState === 4 && request.status == 200) {
-    //   console.log(request.responseText);
-    let data=JSON.parse(request.responseText);
-    callback(null, data);
+      //   console.log(request.responseText); 
+      let data = JSON.parse(request.responseText);
+      callback(null, data);
     } else if (request.readyState === 4) {
-    //   console.log("Data could not be fetched");
-    callback("Data Could not be fetched", null);
+      //   console.log("Data could not be fetched");
+      callback("Data Could not be fetched", null);
     }
   });
 };
 console.log(1);
 console.log(2);
 // The below function is Asynchronous in nature.
-todos((error, Data)=>{
-    if(Data){
-        console.log(Data);
-    }
-    else{
-        console.log(error);
-    }
+todos((error, Data) => {
+  if (Data) {
+    console.log(Data);
+  } else {
+    console.log(error);
+  }
 });
 console.log(3);
 console.log(4);

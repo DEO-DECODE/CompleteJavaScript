@@ -19,19 +19,20 @@ let updatedmainMenu=[...hotel.mainMenu, "FoodD", "FoodE"];
 
 // Joining 2 Arrays
 let joinedArrays=[...nums, ...anotherArray];
-// console.log(joinedArrays);
+console.log(joinedArrays);
 
 // Creating shallow copy using spread operator.
-// let copyArray=[...updatedmainMenu];
+let copyArray=[...updatedmainMenu];
 // console.log(copyArray);
-// copyArray[1]="updatedFood"
-// console.log(copyArray);
-
+copyArray[1]="updatedFood"
+console.log(copyArray);
+console.log(updatedmainMenu);
+console.log(" Differenece -  ")
 // Reference
-let copyArray=updatedmainMenu;
+copyArray=updatedmainMenu;
 copyArray[1]="updatedFood"
 console.log(copyArray);
 console.log(updatedmainMenu);
 // Using Spread operator on string.
 let passion="Programming";
-console.log(...passion);
+// console.log(...passion);

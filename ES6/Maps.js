@@ -8,10 +8,15 @@ typeof returns object:
 */
 let restaurantMap = new Map();
 // Adding Values into the Map.
-restaurantMap.set('name', "Nirmala Inn").set(1, "ADDRESS1").set(2,"Address2").set(true, "We are Open tooday!");
+restaurantMap
+  .set("name", "Nirmala Inn")
+  .set(1, "ADDRESS1")
+  .set(2, "Address2")
+  .set(true, "We are Open tooday!");
 console.log(restaurantMap);
 // Getting the Value corresponding to the key.
-console.log(restaurantMap.get(1));
-restaurantMap.forEach((value, key)=>{
-    console.log("Key :- ", key ," Value : ", value  );
-})
+console.log(restaurantMap.get("name"));
+// Now for looping , we use forEach method.
+restaurantMap.forEach((value, key) => {
+  console.log("Key :- ", key, " Value : ", value);
+});

@@ -21,7 +21,7 @@ let [first, second] = hotel.categories;
 // console.log(first, third);
 // Swapping
 [second, first] = [first, second];
-console.log(first, second);
+// console.log(first, second);
 // Destructurig in a nested array
 let nums = [2, 3, [4, 5]];
 let [a, , [b, c]] = nums;
@@ -39,8 +39,8 @@ let [a, , [b, c]] = nums;
 // let { name, Menu = [], categories = [] } = hotel;
 // console.log(name, Menu, categories);
 // Destructuring Nested Objects.
-let {name,openingHours }=hotel;
-console.log(name, openingHours);
-let {sunday:{open, close}}=openingHours;
+// let {name,openingHours }=hotel;
+// console.log(name, openingHours);
+let {sunday:{open, close}}=hotel.openingHours;
 console.log(open, close);
 

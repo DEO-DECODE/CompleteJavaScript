@@ -12,6 +12,6 @@ Array.from(parentElement.children).forEach((elem)=>{
 // Child Elements
 let childElements=document.querySelector('h2');
 // Finding the parent of specific child.
-console.log(childElements.parentElement);
+// console.log(childElements.parentElement);
 // Finding next as well as previous element of Child.
-console.log(childElements.previousElementSibling);
+// console.log(childElements.previousElementSibling);

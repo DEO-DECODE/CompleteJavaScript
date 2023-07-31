@@ -14,9 +14,9 @@ let mainPlane = {
     });
   },
 };
-// mainPlane.book(553, "Carlos");
-// mainPlane.book(643, "Jack");
-// console.log(mainPlane.bookings);
+mainPlane.book(553, "Carlos");
+mainPlane.book(643, "Jack");
+console.log(mainPlane.bookings);
 let childPlain = {
   airline: "Child Plain",
   iatacode: "CP",
@@ -27,7 +27,7 @@ booking.call(childPlain, 665, "Laurie");
 booking.apply(childPlain, [785, "Mahesh"]);
 console.log(childPlain);
 /*
-With the call() method, you can write a method that can be used on differ
+With the call() method, you can write a method that can be used on different objects.
 With call(), an object can use a method belonging to another object.
 */
 let obj = {
@@ -45,10 +45,24 @@ let person2 = {
 };
 console.log(obj.fullName.call(person1));
 console.log(obj.fullName.call(person2));
+
+// The call() method takes arguments separately.
+const person = {
+  fullName: function (city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  },
+};
+
+const person5 = {
+  firstName: "John",
+  lastName: "Doe",
+};
+
+person.fullName.call(person5, "Oslo", "Norway");
+
 /*
 With the apply() method, you can write a method that can be used on different objects.
 The apply() method is similar to the call() method
-The call() method takes arguments separately.
 The apply() method takes arguments as an array.
 */
 
@@ -74,5 +88,5 @@ let person4 = {
   firstName: "Nikhil",
   lastName: "Prince",
 };
-let greets=greet.bind(person4);
+let greets = greet.bind(person4);
 greets();

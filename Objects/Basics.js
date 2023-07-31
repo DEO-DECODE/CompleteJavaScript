@@ -3,16 +3,16 @@ let car = {
   model: "2022",
   company: "Honda",
 };
-console.log(car);
-// Accessing the javascript props.
-console.log(car["company"]);
-console.log(car.model);
+// console.log(car);
+// Accessing the javascript objects.
+// console.log(car["company"]);
+// console.log(car.model);
 let propertyName = "color";
-console.log(car[propertyName]);
+// console.log(car[propertyName]);
 // Modifying the properties of car.
 car["color"] = "Yellow";
 car.model = "2023";
-console.log(car);
+// console.log(car);
 // Deleting the Properties of object.
 let obj = {
   prop1: "value1",
@@ -26,9 +26,9 @@ console.log(obj, returnValue, obj.prop1);
 /*
 It is nothing but object property key, holding function as value.
 */
-let person={
-    ageCalculate: function(birthYear){
-        return 2023-birthYear;
-    }
-}
+let person = {
+  ageCalculate: function (birthYear) {
+    return 2023 - birthYear;
+  },
+};
 console.log(`Current age of Shruti is ${person.ageCalculate(2002)}`);

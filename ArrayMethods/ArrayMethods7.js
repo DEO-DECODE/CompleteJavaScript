@@ -8,7 +8,7 @@ let arr = [1, 2, 4, 5];
 let newArray = arr.flatMap((elem) => {
   return [elem, elem * 2];
 });
-// console.log(newArray);
+console.log(newArray);
 let cart = [
   {
     name: "Samsung",

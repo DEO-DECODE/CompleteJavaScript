@@ -11,7 +11,7 @@ Falsy Values => 0, null, false, undefined, ''
 // console.log(results);
 // let results=0&&"coders";
 // console.log(results);
-// let results="Programmers"&&"coders";
+let results="Programmers"&&"coders";
 // console.log(results);
 
 // OR
@@ -19,5 +19,5 @@ Falsy Values => 0, null, false, undefined, ''
 // console.log(results);
 // let results="Programmers"||"";
 // console.log(results);
-let results=""||"Coders"||"Programmers";
+// let results=""||"Coders"||"Programmers";
 console.log(results);

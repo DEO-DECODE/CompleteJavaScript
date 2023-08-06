@@ -23,6 +23,9 @@ It is not a mutating method, It converts the original array into a string.
 // Slice method
 /*
 It is used to extract part of the array without mutating the original array.
+The slice() method returns selected elements in an array, as a new array.
+The slice() method selects from a given start, up to a (not inclusive) given end.
+The slice() method does not change the original array.
 */
 let nums2 = [3, 5, 7, 9, 2];
 // let extractedArray = nums2.slice(1, 4);

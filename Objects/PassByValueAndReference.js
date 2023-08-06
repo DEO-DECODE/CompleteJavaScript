@@ -8,15 +8,12 @@ let getRef = arr;
 // console.log("Original Array : ", arr);
 // console.log("GetRef array : ", getRef);
 // //
-// arr[6]=8;
-// console.log("Original Array : ", arr);
-// console.log("GetRef array : ", getRef);
 /*
 In case of Pass by reference , both the arrays are pointing to same memory location.
 */
 /*Pass by Value*/
-let passByValueArray = [...arr];
-passByValueArray[5] = 9;
+let passByValueArray = [...arr, 17];
+passByValueArray[6] = 9;
 console.log("Original Array : ", arr);
 console.log("Pass by value array : ", passByValueArray);
 /*

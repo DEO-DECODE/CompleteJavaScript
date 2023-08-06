@@ -28,19 +28,21 @@ let [a, , [b, c]] = nums;
 // console.log(a, b, c);
 
 // Destructuring of Objects;
-// let { name, location, mainMenu } = hotel;
+let { name, location, mainMenu } = hotel;
 // console.log(name);
 // console.log(location);
-// console.log(mainMenu);
+console.log(mainMenu);
+console.log(typeof mainMenu);
 // Setting Customized name to Object Property.
 // let { name: hotelName, location: hotelLocation, mainMenu: hotelMenu } = hotel;
 // console.log(hotelName, hotelMenu);
 // // Setting Default Values
 // let { name, Menu = [], categories = [] } = hotel;
+// Menu was not originally present in the object.
 // console.log(name, Menu, categories);
 // Destructuring Nested Objects.
 // let {name,openingHours }=hotel;
 // console.log(name, openingHours);
-let {sunday:{open, close}}=hotel.openingHours;
-console.log(open, close);
+// let {sunday:{open, close}}=hotel.openingHours;
+// console.log(open, close);
 

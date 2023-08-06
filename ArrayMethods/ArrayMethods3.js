@@ -18,7 +18,7 @@ const persons = [
 let newArray=persons.map(getFullName);
 
 function getFullName(item) {
-  return [item.firstname, item.lastname].join("  ");
+  return [item.firstname, item.lastname].join(" - ");
 }
 console.log(newArray);
 // Filter Method

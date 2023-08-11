@@ -11,9 +11,9 @@ let newArray = [...letters, ...nums];
 // console.log(newArray);
 // console.log(nums, letters);
 // Join method
-// let joined =letters.join(' ');
-// console.log(joined);
-// console.log(typeof joined);
+let joined =letters.join('*');
+console.log(joined);
+console.log(typeof joined);
 // let joined2 =nums.join(',');
 // console.log(joined2);
 // console.log(typeof joined2);
@@ -27,8 +27,9 @@ The slice() method returns selected elements in an array, as a new array.
 The slice() method selects from a given start, up to a (not inclusive) given end.
 The slice() method does not change the original array.
 */
-let nums2 = [3, 5, 7, 9, 2];
-// let extractedArray = nums2.slice(1, 4);
+let nums2 = [3, 5, 7, 9, 2, 7, 8];
+// let extractedArray = nums2.slice(2, 4);
+// // first v index hai and Second v index hai.
 // console.log("Original Array is : ", nums2);
 // console.log("Extracted Array is : ", extractedArray);
 let extractedArray = nums2.slice(1);

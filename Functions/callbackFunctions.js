@@ -1,6 +1,8 @@
 // Example 1
 var talk= function(fx){
+    console.log("Before Callback");
     fx();
+    console.log("After Callback");
 }
 var sayHi=function(){
     console.log("Hiii!");
@@ -8,6 +10,9 @@ var sayHi=function(){
 talk(sayHi);
 // Example 2
 var calc=function(fx, a, b){
+    // 
+    // 
+    // 
     return fx(a, b);
 }
 var sum=function(a,b){

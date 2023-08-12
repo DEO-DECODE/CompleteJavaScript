@@ -47,7 +47,10 @@ let newCart2 = cart.map((elem) => {
     : [elem];
 });
 console.log(newCart2);
-
+/*
+FlatMap ke case me array ke elements ek object hai jb hmne method run kiya to jo original element tha usme ek object bs add ho gya jb samsung ka case the to ek extra object screen guard add ho gya bs lekin baaki ke case me original object hi return ho gya.
+But Map ke case me array of object(s) return ho rha tha, jbki originally bs object tha.
+*/
 // Sorting
 let letters = ["d", "e", "f", "a", "b"];
 console.log(letters.sort());

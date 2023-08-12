@@ -4,7 +4,7 @@ let todos = (callback) => {
   /*
    XMLHttpRequest is a constructor
    All modern browsers have a built-in XMLHttpRequest object to request data from a server.
-   The XMLHttpRequest object can be used to request data from a web server.
+   ...The XMLHttpRequest object can be used to request data from a web server...
   */
   console.log(request);
   // Setting up the request

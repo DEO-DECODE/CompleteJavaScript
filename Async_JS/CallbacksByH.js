@@ -19,6 +19,10 @@ function hello(error, src) {
     console.log(error);
     return;
   }
-  alert("Hello World" + src);
+  alert("Hello World " + src);
 }
 loadScript("Promise.js", hello);
+/*
+Related Questions
+What are callback functions?
+*/

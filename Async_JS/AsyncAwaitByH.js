@@ -4,7 +4,6 @@ async function harry() {
       resolve("27 Deg");
     }, 2000);
   });
-
   let bangaloreWeather = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve("21 Deg");
@@ -21,6 +20,7 @@ async function harry() {
 
 const cherry = async () => {
   console.log("Hey I am cherry and I am waiting ");
+  return 56;
 };
 
 const main1 = async () => {

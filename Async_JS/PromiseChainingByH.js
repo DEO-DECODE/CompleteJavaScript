@@ -20,7 +20,7 @@ p1.then(
 )
   .then(
     (value) => {
-        console.log(value);
+      console.log(value);
       console.log("We are done");
       return new Promise((resolve, reject) => {
         setTimeout(() => {

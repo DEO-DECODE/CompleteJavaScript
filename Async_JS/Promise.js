@@ -22,7 +22,7 @@ let todos = (resource) => {
         //   console.log(request.responseText);
         let data = JSON.parse(request.responseText);
         resolve(data);
-      } else if (request.readyState === 4) {
+      } else if (request.readyState === 4)  {
         //   console.log("Data could not be fetched");
         reject("Data Could not be fetched");
       }
@@ -38,10 +38,16 @@ todos("Data.json")
   .then((data) => {
     console.log("Promise 2 Resolved ! ", data);
     return todos("Data3.json");
-  }).then((data)=>{
-    console.log("Promise 3 resolved ! ", data);
-  }).catch((error)=>{
-    console.log(error);
   })
+  .then((data) => {
+    console.log("Promise 3 resolved ! ", data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 // Catch bs ek method ke error ko catch kr payega, uske baad k liye nhi chalega fir.
+/*
+Related Questions
+What are callback functions?
+*/

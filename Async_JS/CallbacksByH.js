@@ -4,11 +4,11 @@ A callback function is a function, which is passed as an argument to another fun
 function loadScript(src, callback) {
   let script = document.createElement("script");
   script.src = src;
-  script.onload = function () {
+  script.onload = () => {
     console.log("Laoded Script with source " + src);
     callback(null, src);
   };
-  script.onerror = function () {
+  script.onerror = () => {
     console.log("Error loading with src " + src);
     callback(new Error("Unable to load"));
   };

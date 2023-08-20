@@ -1,7 +1,6 @@
 /*
-The Promise object represents the eventual completion or failure of an asynchronous operation and it's resulting value
+The Promise object represents the eventual completion or failure of an asynchronous operation and it's resulting value.
 The Promise() constructor takes a function as an argument. The function also accepts two functions resolve() and reject().
-
 If the promise returns successfully, the resolve() function is called. And, if an error occurs, the reject() function is called.
 */
 console.log(1);
@@ -45,3 +44,7 @@ p2.then(
   }
 );
 console.log(5);
+/*
+Related Questions.
+What is Promise object in javascript?
+*/

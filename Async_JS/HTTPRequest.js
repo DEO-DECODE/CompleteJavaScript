@@ -21,6 +21,7 @@ let todos = (callback) => {
     // console.log(request, request.readyState);
     if (request.readyState === 4 && request.status == 200) {
       //   console.log(request.responseText); 
+      // The responseText property returns the server response as a text string.
       let data = JSON.parse(request.responseText);
       callback(null, data);
     } else if (request.readyState === 4) {

@@ -23,7 +23,7 @@ console.log(3);
 // To get the value
 p1.then(
   (value) => {
-    console.log(value);
+    console.log(`resolved to ${value}`);
   },
   (error) => {
     console.log(error);

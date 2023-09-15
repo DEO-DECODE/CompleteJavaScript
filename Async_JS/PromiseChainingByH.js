@@ -24,7 +24,7 @@ p1.then(
       console.log("We are done");
       return new Promise((resolve, reject) => {
         setTimeout(() => {
-          reject("Unfortunately an error occured!");
+          reject(new Error("Unfortunately an error occured!"));
         });
       }, 3000);
     },

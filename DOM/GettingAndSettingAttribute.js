@@ -3,7 +3,7 @@
 // Getting the attribute
 let link1 = document.querySelectorAll("a");
 console.log(link1[0].getAttribute("href"));
-// console.log(link1[0].innerText);
+console.log(link1[0].innerText);
 // Setting the attribute
 link1[0].setAttribute(
   "href",

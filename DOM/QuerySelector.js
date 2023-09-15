@@ -9,7 +9,7 @@ let resultedElement=document.querySelectorAll('p');
 resultedElement.forEach((elem)=>{
     console.log(elem);
 })
-// console.log(resultedElement);
+console.log(resultedElement);
 // Acessing elements by their Class.
 let resultedElement2=document.querySelectorAll('.coderdost');
 // console.log(resultedElement2);

@@ -50,5 +50,5 @@ const updateMyVehicle = {
   color: "yellow",
 };
 
-const myUpdatedVehicle = {...updateMyVehicle, ...myVehicle, milage:21};
+const myUpdatedVehicle = {...updateMyVehicle, ...myVehicle, milage:21, model:"Mercedes"};
 console.log(myUpdatedVehicle);

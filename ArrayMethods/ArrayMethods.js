@@ -11,9 +11,16 @@ let newArray = [...letters, ...nums];
 // console.log(newArray);
 // console.log(nums, letters);
 // Join method
-let joined =letters.join('*');
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let text = fruits.join(" and ");
+console.log(text);
+let joined = letters.join("X");
 console.log(joined);
 console.log(typeof joined);
+/*
+The join() method returns an array as a string.
+The join() method does not change the original array.
+*/
 // let joined2 =nums.join(',');
 // console.log(joined2);
 // console.log(typeof joined2);

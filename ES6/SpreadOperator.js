@@ -9,11 +9,11 @@ let hotel = {
   },
 };
 let nums = [2, 3, 5, 7];
-// console.log(...nums);
+console.log(nums);
 
 // UseCase
 let anotherArray = [12, 15, ...nums];
-// console.log(anotherArray);
+console.log(anotherArray);
 let updatedmainMenu = [...hotel.mainMenu, "FoodD", "FoodE"];
 console.log(updatedmainMenu);
 // console.log(".......")
@@ -25,7 +25,7 @@ console.log(joinedArrays);
 
 // Creating shallow copy using spread operator.
 let copyArray = [...updatedmainMenu];
-// console.log(copyArray);
+console.log(copyArray);
 copyArray[1] = "updatedFood";
 console.log(copyArray);
 console.log(updatedmainMenu);

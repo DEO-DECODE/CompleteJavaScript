@@ -13,7 +13,7 @@ let blockList = [
   { user: "Shruti", reason: "Unauthorized accees" },
 ];
 blockList.forEach((elem) => {
-  console.log(`${elem.user} was blocked due to ${elem.reason}`);
+  console.log(`${elem["user"]} was blocked due to ${elem.reason}`);
 });
 
 const numbers = [5, 4, 1, 4];

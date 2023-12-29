@@ -12,7 +12,7 @@ What does await do?
 How does await work?
 */
 let getTodos = async () => {
-  let response = await fetch("Data2.json");
+  let response = await fetch("DataA2.json");
   // Throwing a custom error.
   if (response.status !== 200) {
     throw new Error("Custom: Error in fetching the data");
@@ -21,10 +21,11 @@ let getTodos = async () => {
   return data;
   // We are returning a promise.
 };
-getTodos()
-  .then((data) => {
+getTodos().then(
+  (data) => {
     console.log(data);
-  })
-  .catch((error) => {
+  },
+  (error) => {
     console.log(error.message);
-  });
+  }
+);

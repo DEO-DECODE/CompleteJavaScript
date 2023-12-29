@@ -21,7 +21,7 @@ let obj = {
 };
 let returnValue = delete obj.prop1;
 delete obj["prop2"];
-console.log(obj, returnValue, obj.prop1);
+console.log(obj, returnValue, obj["prop3"]);
 // Function vs Methods
 /*
 It is nothing but object property key, holding function as value.

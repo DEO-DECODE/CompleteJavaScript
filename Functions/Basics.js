@@ -1,13 +1,14 @@
 function nameOfFunction(){
     console.log("You are running code present inside the function.");
 }
-nameOfFunction();
+// nameOfFunction();
 let fun=function(){
     console.log("This is also an example of function");
 }
-fun();
+// fun();
 let invitation=function(name = "defaultName", time ="night"){
     console.log(`Welcome ! ${name} at ${time}`);
+    console.log("Welcome ! "+name +" at " +time);
 }
 invitation("Dev", "Afternoon");
 invitation();

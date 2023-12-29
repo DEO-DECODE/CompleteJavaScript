@@ -3,14 +3,15 @@
 // Ignores Spaces.
 // Retrieve and Set content in Plain text.
 let content = document.querySelector(".content");
-content.innerText += " Great Coders";
+content.innerText += " Great v Coders";
 // InnerHTML
 // It does not ignores spaces.
 // Retrieves and set content in HTML format.
+
+content.innerHTML = "I have changed!";
+let html = document.querySelector(".content").innerHTML;
 console.log(html);
-content.innerHTML = "<h3>Great Coders</h3>";
-let html = document.querySelector('.content').innerHTML;
 // Adding the Style
-let heading=document.querySelector('h1');
-heading.style.color="Red";
-heading.style.backgroundColor="Yellow";
+let heading = document.querySelector("h1");
+heading.style.color = "Red";
+heading.style.backgroundColor = "Yellow";

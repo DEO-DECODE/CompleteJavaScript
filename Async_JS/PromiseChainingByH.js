@@ -1,7 +1,7 @@
 let p1 = new Promise((resolve, reject) => {
   setTimeout(() => {
     console.log("Resolved after 2 seconds");
-    resolve(56);
+    reject(new Error("error occured!"));
   }, 2000);
 });
 

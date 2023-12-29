@@ -54,7 +54,7 @@ console.log(results);
 // console.log(results);
 
 // example 2
-const ages = [3, 10, 18, 20];
+const ages = [3, 10, 18, 20, 25];
 
 function checkAge(age) {
   return age > 18;

@@ -6,7 +6,7 @@ If it does not find any element , it returns -1.
 */
 let ages = [21, 18, 15, 17, 23];
 let indexOfFirstElem = ages.findIndex((age) => {
-  return age < 18;
+  return age < 0;
 });
 console.log(indexOfFirstElem);
 // Some Method

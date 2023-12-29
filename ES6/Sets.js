@@ -5,7 +5,7 @@ A Set can hold any value of any data type.
 */
 let itemSet = new Set([2, 4, 4, 3, 5, 5, 7, true, "Raju"]);
 // console.log(itemSet);
-// console.log(typeof itemSet);
+console.log(typeof itemSet);
 // console.log(itemSet.size);
 // console.log(itemSet.has(11));
 itemSet.add(50);

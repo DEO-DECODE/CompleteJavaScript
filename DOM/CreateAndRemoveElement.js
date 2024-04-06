@@ -1,9 +1,11 @@
 // Creating
 let qs=document.querySelector('ul');
+console.log(qs)
 let buttonSelector=document.querySelector('.clickMe');
+console.log(buttonSelector)
 buttonSelector.addEventListener('click', ()=>{
     let newItem=document.createElement('li');
-    newItem.innerHTML='Something New added';
+    newItem.innerText='Something New added';
     qs.append(newItem);
 })
 // Make a list

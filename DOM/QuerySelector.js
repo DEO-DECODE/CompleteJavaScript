@@ -12,7 +12,7 @@ resultedElement.forEach((elem) => {
 // console.log(resultedElement);
 // Acessing elements by their Class.
 let resultedElement2 = document.querySelectorAll(".coderdost");
-// console.log(resultedElement2);
+console.log(resultedElement2);
 
 // Accessing elements by their ids.
 let resultedElement3 = document.querySelectorAll("#coders");

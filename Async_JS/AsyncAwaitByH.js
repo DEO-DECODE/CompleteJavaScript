@@ -1,4 +1,4 @@
-async function harry() {
+let harry = async () => {
   let delhiWeather = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve("27 Deg");
@@ -16,7 +16,7 @@ async function harry() {
   let bangaloreW = await bangaloreWeather;
   console.log("Fetched Bangalore Weather: " + bangaloreW);
   return [delhiW, bangaloreW];
-}
+};
 
 const cherry = async () => {
   console.log("Hey I am cherry and I am waiting ");
@@ -30,4 +30,3 @@ const main1 = async () => {
   console.log(a, b);
 };
 main1();
-

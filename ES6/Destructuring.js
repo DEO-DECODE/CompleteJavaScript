@@ -14,11 +14,11 @@ let items = [1, 4, 5, 8];
 let [x, y, p, z] = items;
 // console.log(x, y, z, p);
 // Example 2
-let [first, second] = hotel.categories;
+// let [first, second] = hotel.categories;
 // console.log(first, second);
 // Skipping the second element.
-// let [first, ,third]=hotel.categories;
-// console.log(first, third);
+let [first, ,third]=hotel.categories;
+console.log(first, third);
 // Swapping
 // [second, first] = [first, second];
 // console.log(first, second);
@@ -42,6 +42,6 @@ console.log(a, b, c);
 // console.log(name, Menu, categories);
 // Destructuring Nested Objects.
 let {name,openingHours }=hotel;
-// console.log(name, openingHours);
+console.log(name, openingHours);
 let {sunday:{open, close}}=hotel.openingHours;
 console.log(open, close);

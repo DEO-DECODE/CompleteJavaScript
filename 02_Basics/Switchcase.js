@@ -2,7 +2,7 @@
 // subadmin : gets acess to create and delete courses
 // testprep : gets acess to create and delete courses.
 // user : gets access to consume content.
-var user = "adm";
+var user = "admin";
 switch (user) {
   case "admin": {
     console.log("gets full acess");

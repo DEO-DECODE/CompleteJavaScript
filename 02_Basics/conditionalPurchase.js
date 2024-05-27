@@ -7,3 +7,7 @@ if(google || facebook || instagram){
 else{
     console.log("Wrong Credentials !!!!");
 }
+let arr=[], x=51;
+if(x>0&&true&&5&&-1&&arr){
+    console.log("Hii");
+}

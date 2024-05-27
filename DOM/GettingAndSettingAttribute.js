@@ -11,3 +11,4 @@ link1[0].setAttribute(
 );
 console.log(link1[0].getAttribute("href"));
 link1[0].innerHTML = "<h3>Go to W3Shools</h3>";
+link1[0].style.textDecoration="none"

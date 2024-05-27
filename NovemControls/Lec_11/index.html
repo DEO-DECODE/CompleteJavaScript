@@ -1,0 +1,199 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addin , Removing, Toggling, Replacing Class</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transition: all 0.5s ease-in-out;
+        margin: 20px 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .active {
+        background-color: yellow;
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myBox" class="box"></div>
+    <button onclick="toggleClass()">Toggle Class</button>
+    <script src="./Lec_12.js"></script>
+  </body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding and Removing Class</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin: 20px auto;
+      }
+      .bounce {
+        animation: bounce 1s ease-in-out;
+      }
+      .buttonClass {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        margin: 20px;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myBox" class="box"></div>
+    <div class="buttonClass">
+      <button onclick="addBounce()">Add Bounce</button>
+      <button onclick="removeBounce()">Remove Bounce</button>
+    </div>
+  </body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding and Removing Class</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin: 20px auto;
+      }
+      .bounce {
+        animation: bounce 1s ease-in-out infinite;
+      }
+      .buttonClass {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        margin: 20px;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myBox" class="box"></div>
+    <div class="buttonClass">
+      <button onclick="addBounce()">Add Bounce</button>
+      <button onclick="removeBounce()">Remove Bounce</button>
+    </div>
+    <script src="./Lec_12.js"></script>
+  </body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Class with some Another class</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            transition: all 1s ease-in-out;
+            margin: 50px auto;
+            }
+            .scale{
+                transform: scale(1.5);
+            }
+            .rotate{
+                transform: rotate(45deg);
+            }
+            .buttonClass{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            button{
+                margin:20px;
+            }
+    </style>
+</head>
+<body>
+    <div id="myBox" class="box"></div>
+    <div class="buttonClass">
+    <button onclick="replaceWithScale()">Scale</button>
+    <button onclick="replaceWithRotate()">Rotate</button>
+</div>
+<script src="./Lec_12.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .styled-div{
+            border: 2px solid green;
+            color: yellow;
+            border-radius: 20px;
+            background-color: aqua;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <p>I am Child  of            content div</p>
+      <div>I am another child</div>
+      <h2 class="novemh">Hello Everyone..</h2>
+    </div>
+    <p id="pcontent">Hello Developers</p>
+    <h1 class="main">Welcome to Novem Controls</h1>
+    <p>We Welcome You here..</p>
+    <h2 class="novemh">Coding is my Hobby</h2>
+    <h1>Our lists</h1>
+    <ul>
+      <li>Eat</li>
+      <li>Sleep</li>
+      <li>Insta</li>
+      <li>Repeat</li>
+    </ul>
+    <a href="https://www.cricbuzz.com/" target="_blank">Go to Cricbuzz</a>
+    <h1 class="main">Thank You</h1>
+    <button class="clickme">Click Me 1</button>
+    <button class="clickme">Click Me 2</button>
+    <button class="clickme">Click Me 3</button>
+    <button class="clickme">Click Me 4</button>
+    <script src="./lec_11.js"></script>
+  </body>
+</html>

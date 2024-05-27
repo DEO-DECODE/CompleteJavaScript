@@ -27,11 +27,11 @@ fetchData(arr)
   .then((data) => {
     console.log(data);
   })
-  .then(()=>console.log(1))
-  .then(()=>console.log(2))
+  .then(() => console.log(1))
+  .then(() => console.log(2))
   .catch((err) => {
     console.log(err);
   })
-  .finally(()=>{
-    console.log("This Will Be Executed either case")
+  .finally(() => {
+    console.log("This Will Be Executed either case");
   });

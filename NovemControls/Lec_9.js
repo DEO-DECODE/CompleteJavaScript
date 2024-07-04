@@ -15,10 +15,10 @@ IIFE helps to keep the global scope clean by encapsulating variables and functio
 within a scope or we can say it avoids global scope popllution
 */
 
-// (function () {
-//   console.log(hoistedVar);
-//   var hoistedVar = "I am a hoisted variable";
-// })();
+(function () {
+  console.log(hoistedVar);
+  var hoistedVar = "I am a hoisted variable";
+})();
 
 // Array Methods
 
@@ -59,6 +59,7 @@ let arr = [45, 65, 8, 7, 13, 14, 20, 74];
 // console.log(arr2);
 // let arr3 = arr.splice(2, 2, 4, 5, 6);
 // console.log(arr);
+// console.log(arr3);
 /*
 [45,65,8,7,13,14,20,74]
 arr.splice(2,2);
@@ -74,9 +75,9 @@ arr.splice(2,2);
 // console.log(arr);
 // console.log(arr3);
 // console.log(arr);
-// let arr3 = arr.splice(2, 4, [4, 5], "sakshi");
-// console.log(arr);
-// console.log(arr3);
+let arr3 = arr.splice(2, 4, [4, 5], "sakshi");
+console.log(arr);
+console.log(arr3);
 // console.log(arr);
 // let arr3 = arr.splice(2, "sakshi");
 // console.log(arr);

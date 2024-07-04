@@ -1,3 +1,119 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addin , Removing, Toggling, Replacing Class</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transition: all 0.5s ease-in-out;
+        margin: 20px 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .active {
+        background-color: yellow;
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myBox" class="box"></div>
+    <button onclick="toggleClass()">Toggle Class</button>
+    <script src="./Lec_12.js"></script>
+  </body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding and Removing Class</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin: 20px auto;
+      }
+      .bounce {
+        animation: bounce 1s ease-in-out infinite;
+      }
+      .buttonClass {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        margin: 20px;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myBox" class="box"></div>
+    <div class="buttonClass">
+      <button onclick="addBounce()">Add Bounce</button>
+      <button onclick="removeBounce()">Remove Bounce</button>
+    </div>
+    <script src="./Lec_12.js"></script>
+  </body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Class with some Another class</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            transition: all 1s ease-in-out;
+            margin: 50px auto;
+            }
+            .scale{
+                transform: scale(1.5);
+            }
+            .rotate{
+                transform: rotate(45deg);
+            }
+            .buttonClass{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            button{
+                margin:20px;
+            }
+    </style>
+</head>
+<body>
+    <div id="myBox" class="box"></div>
+    <div class="buttonClass">
+    <button onclick="replaceWithScale()">Scale</button>
+    <button onclick="replaceWithRotate()">Rotate</button>
+</div>
+<script src="./Lec_12.js"></script>
+</body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,4 +148,4 @@
 
     <script src="./Lec_12.js"></script>
   </body>
-</html>
+</html> 

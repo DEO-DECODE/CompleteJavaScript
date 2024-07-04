@@ -98,7 +98,6 @@ j=4{
 // }
 // function sayHello(name, college) {
 //   // It is a fnction called sayHello
-//   // It is simply taking no arguments.
 //   // name-> first parameter
 //   // college-> second parameter
 //   console.log(`I am ${name} from ${college}`);

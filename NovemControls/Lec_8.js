@@ -23,9 +23,9 @@ nextPerson.name = "Sakshi";
 // How to traverse the object
 // for (let key in nextPerson) {
 //   console.log(`${key} = ${nextPerson[key]}`);
-//   // console.log(`${key} = ${nextPerson.key}`);
+//   console.log(`${key} = ${nextPerson.key}`); //incorrect
 //   // console.log(key);
-//   // console.log(`${nextPerson["key"]}`);
+//   console.log(`${nextPerson["key"]}`);//incorrect
 // }
 
 // Functions Continue........
@@ -54,7 +54,7 @@ let obj2 = {
 };
 // obj2.print2();
 /*
-Arrow function does not create their own "this" binding.
+Arrow functions do not create their own "this" binding.
 In obj2 the print2 is an Arrow function , and Arrow function does not create their own This binding, due to which, This will point to what, it was actually pointing before, which was Window object.
 */
 // console.log(this);
@@ -106,15 +106,15 @@ let func = function (fx, a, b) {
 // setInterval(()=>{
 //     console.log("Hiiii");
 // },2000);
-// function redirecCall() {
-//   console.log("Hello");
-// }
-// let intervalCount = setInterval(redirecCall, 1000);
-// setTimeout(() => {
-//   clearInterval(intervalCount);
-//   //We will be using it to stop the iterations
-//   console.log("Interval Stopped after 5 seconds");
-// }, 5000);
+function redirecCall() {
+  console.log("Hello");
+}
+let intervalCount = setInterval(redirecCall, 1000);
+setTimeout(() => {
+  clearInterval(intervalCount);
+  //We will be using it to stop the iterations
+  console.log("Interval Stopped after 5 seconds");
+}, 5000);
 
 let fx = () => {
   console.log("Hii of fx");
@@ -130,4 +130,4 @@ let funca = function (fx, fx2) {
   }, 3000);
   fx2();
 };
-funca(fx, fx2);
+// funca(fx, fx2);

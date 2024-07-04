@@ -52,24 +52,24 @@ The functions that belongs to an object is called methods
 In javaScript, this keyword basically represents an object.
 */
 // let person = {
-//     name: "Vishal",
-//     age: 20,
-//     Address: {
-//       street: "8B",
-//       locality: "Industrial Area",
-//       country: "India",
-//       house: {
-//         floor: 1,
-//         room: 3,
-//         furnished: ["Sofa", "Kitchen"],
-//       },
+//   name: "Vishal",
+//   age: 20,
+//   Address: {
+//     street: "8B",
+//     locality: "Industrial Area",
+//     country: "India",
+//     house: {
+//       floor: 1,
+//       room: 3,
+//       furnished: ["Sofa", "Kitchen"],
 //     },
-//     phone: 7415896231,
-//     hobbies: ["Singing", "Dancing", "Studying", "Coding"],
-//     sayName: function(){
-//         console.log(this);
-//     }
-//   };
+//   },
+//   phone: 7415896231,
+//   hobbies: ["Singing", "Dancing", "Studying", "Coding"],
+//   sayName: function () {
+//     console.log(this);
+//   },
+// };
 //
 // console.log(person.sayName());
 // let person = {
@@ -114,7 +114,7 @@ let stud1 = {
 let stud2 = {
   name: "Manvi",
 };
-// console.log(obj.greet.call(stud1, 18, "PU"));
+console.log(obj.greet.call(stud1, 18, "PU"));
 
 // Bind
 /*
@@ -129,3 +129,10 @@ let person4 = {
 };
 let greet3 = greet2.bind(person4);
 greet3();
+
+/*
+Invocation Time:
+
+call: Invokes the function immediately.
+bind: Returns a new function that can be invoked later.
+*/

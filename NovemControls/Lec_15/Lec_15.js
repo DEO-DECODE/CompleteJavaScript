@@ -1,4 +1,4 @@
-// // Promise Chaining
+// Promise Chaining
 // let p1 = new Promise((resolve, reject) => {
 //   setTimeout(() => {
 //     console.log("it will be resolved after 2 secs");
@@ -44,37 +44,79 @@
 //       console.log(error);
 //     }
 //   );
+// When error is not handled
+// let p1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log("it will be resolved after 2 secs");
+//     reject("An error occured");
+//   }, 2000);
+// });
 
-//
-// function fetchData() {
+// p1.then((value) => {
+//   console.log(value);
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
-//       console.log("Data fetched");
-//       resolve({ id: 1, name: "Jasleen" });
-//     }, 1000);
+//       resolve("Promise 2");
+//     }, 2000);
 //   });
-// }
-// function processData(data) {
-//   // data is an object
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("Data Processed");
-//       data.processed = true;
-//       resolve(data);
-//     }, 1000);
+// })
+//   .then((value) => {
+//     console.log(value);
+//     console.log("We are done");
+//     return new Promise((resolve, reject) => {
+//       setTimeout(() => {
+//         reject("Unfortunately an error occurred");
+//       }, 2000);
+//     });
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     console.log("We are Pakka wala done");
+//   })
+//   .catch((error) => {
+//     console.log(error); // Logs "An error occured"
 //   });
-// }
-// function displayData(data) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log(`Displaying data ${JSON.stringify(data)}`);
-//       resolve();
-//     }, 1000);
-//   });
-// }
+
+/*
+If an error is thrown, it will break the promise chain unless it is caught by an error handler.
+If the error is caught and handled, the promise chain can continue with the value returned from the error handler.
+*/
+
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Data fetched");
+      resolve({ id: 1, name: "Jasleen" });
+    }, 1000);
+  });
+}
+function processData(data) {
+  // data is an object
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Data Processed");
+      data.processed = true;
+      resolve(data);
+    }, 1000);
+  });
+}
+function displayData(data) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log(`Displaying data ${JSON.stringify(data)}`);
+      // resolve(data);
+      /*
+
+If you don't call resolve in the displayData function, the promise returned by displayData will remain pending, and the subsequent .then() in the chain will never execute. 
+*/
+    }, 1000);
+  });
+}
+
 // fetchData()
 //   .then(
 //     (data) => {
+//       console.log(data);
 //       return processData(data);
 //     },
 //     (error) => {
@@ -83,6 +125,7 @@
 //   )
 //   .then(
 //     (data) => {
+//       console.log(data);
 //       return displayData(data);
 //     },
 //     (error) => {
@@ -91,7 +134,7 @@
 //   )
 //   .then(
 //     (data) => {
-//       console.log("All tasks done " + data);
+//       console.log("All tasks done " + JSON.stringify(data));
 //     },
 //     (error) => {
 //       console.log(error);
@@ -105,23 +148,22 @@
 /*
 Await keyword makes the function pause the execution and wait for a resolved promise
 */
-
 // let getTodos = async () => {
 //   let response = await fetch("Data.json");
 //   console.log(response);
 //   let data= await response.json();
 //   console.log(data);
-// };
-// let getTodos = async () => {
-//   // let response = await fetch("Data4.json");
-//   let response = await fetch("Data.json");
-//   // console.log(response);
-//   if (response.status > 299) {
-//     throw new Error("Error in fetching data");
-//   }
-//   let data = await response.json();
-//   return data;
-// };
+// // };
+let getTodos = async () => {
+  // let response = await fetch("Data4.json");
+  let response = await fetch("Data5.json");
+  console.log(response);
+  if (response.status > 299) {
+    throw new Error("Error in fetching data");
+  }
+  let data = await response.json();
+  return data;
+};
 
 // getTodos().then(
 //   (data) => {

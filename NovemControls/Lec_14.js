@@ -59,6 +59,12 @@ let { name: nameA, location: locationA, categories } = hotel;
 // console.log(open, " ", close);
 // console.log(hotel.openingHours);
 // console.log(sunday);
+let {
+  openingHours: {
+    tuesday: { open, close },
+  },
+} = hotel;
+// console.log(open, " - ", close);
 
 // Sets in JavaScript
 
@@ -96,6 +102,11 @@ let user = {
   age: 19,
   university: "HPCU",
   password: "Kya Password",
+  address: {
+    street: "Ahluwalia and Sons",
+    house: 2100,
+    floor: 2,
+  },
 };
 
 let { password, ...apartFromPassword } = user;
@@ -114,11 +125,11 @@ It is blocking in nature. i.e each operation must be completed before the other 
 */
 // console.log("start");
 
-// function task() {
-//   for (let i = 0; i < 5; ++i) {
-//     console.log(`Hii ${i}`);
-//   }
-// }
+function task() {
+  for (let i = 0; i < 5; ++i) {
+    console.log(`Hii ${i}`);
+  }
+}
 // task();
 // console.log("end");
 
@@ -146,31 +157,31 @@ The Promise constructor takes a callback function as an argument, which in turn 
 If the promise returns successfully , resolve is called and if an error occurs , reject will be called.
 */
 
-// let p1 = new Promise((resolve, reject) => {
-//   console.log("Promise is pending");
-//   setTimeout(() => {
-//     console.log("I am a promise and I will resolve after 3 seconds");
-//     resolve(true);
-//     resolve("Anshul");
-//   }, 3000);
-// });
-// let p2 = new Promise((resolve, reject) => {
-//   console.log("Promise is pending");
-//   setTimeout(() => {
-//     // console.log("I am a promise and I will be rejected 3 seconds");
-//     reject(new Error("I am an error"));
-//   }, 3000);
-// });
+let p1 = new Promise((resolve, reject) => {
+  console.log("Promise is pending");
+  setTimeout(() => {
+    console.log("I am a promise and I will resolve after 3 seconds");
+    resolve([true,"Anshul"]);
+  }, 3000);
+});
+let p2 = new Promise((resolve, reject) => {
+  console.log("Promise is pending");
+  setTimeout(() => {
+    // console.log("I am a promise and I will be rejected 3 seconds");
+    // reject(new Error("I am an error"));
+    reject("I am an error");
+  }, 3000);
+});
 
-// p1.then(
-//   (value) => {
-//     console.log(`Resolved to ${value}`);
-//   },
-//   (error) => {
-//     console.log(`I will be executed when reject will be called`);
-//     console.log(error);
-//   }
-// );
+p1.then(
+  (value1, value2) => {
+    console.log(`Resolved to ${value1}`);
+  },
+  (error) => {
+    console.log(`I will be executed when reject will be called`);
+    console.log(error);
+  }
+);
 
 // p2.then(
 //   (value) => {
@@ -182,14 +193,14 @@ If the promise returns successfully , resolve is called and if an error occurs ,
 //   }
 // );
 
-// let pa = new Promise((resolve, reject) => {
-//   let success = false;
-//   if (success) {
-//     resolve("Promise resolved");
-//   } else {
-//     reject("Promise Rejected");
-//   }
-// });
+let pa = new Promise((resolve, reject) => {
+  let success = false;
+  if (success) {
+    resolve("Promise resolved");
+  } else {
+    reject("Promise Rejected");
+  }
+});
 
 // pa.then(
 //   (value) => {
@@ -200,16 +211,16 @@ If the promise returns successfully , resolve is called and if an error occurs ,
 //   }
 // );
 
-// pa.then((value) => {
-//   console.log(value);
-// }).catch((err) => {
-//   console.log(err);
-// });
+pa.then((value) => {
+  console.log(value);
+}).catch((err) => {
+  console.log(err);
+});
 let arr = [];
 const fetchmoreData = (arr) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-    //   arr.push({ name: "Dev" });
+      //   arr.push({ name: "Dev" });
       if (arr.length > 0) {
         resolve(arr);
       } else {
@@ -229,4 +240,3 @@ fetchmoreData(arr)
   .finally(() => {
     console.log("I will be executed in either of the case");
   });
-

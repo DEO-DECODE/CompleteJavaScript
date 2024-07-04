@@ -45,7 +45,7 @@ let arr = [12, 10, 14, 15, 20];
 // });
 // console.log(modifiedUsers2);
 
-// Fileter Method
+// Filter Method
 
 /*
 Filter method is used to return a newArray that passes the specific condition, that we provide.
@@ -104,11 +104,11 @@ let students = [
 // });
 
 // console.log(elem);
-// let elem = students.find((elem) => {
-//   return elem.name === "Abhimanyu";
-// });
+let elem = students.find((elem) => {
+  return elem.name === "Abhimanyu";
+});
 
-// console.log(elem);
+console.log(elem);
 
 let numbers = [45, 56, 86, 12, 94, 145];
 // let elem= numbers .find((elem)=>{
@@ -119,8 +119,8 @@ let numbers = [45, 56, 86, 12, 94, 145];
 //   return elem < 0;
 // });
 // console.log(elem);
-let elem = numbers.find((elem, index) => {
-  console.log(`Checking for ${elem} which is at ${index}`);
-  return elem > 75;
-});
-console.log(elem);
+// let elem = numbers.find((elem, index) => {
+//   console.log(`Checking for ${elem} which is at ${index}`);
+//   return elem > 75;
+// });
+// console.log(elem);

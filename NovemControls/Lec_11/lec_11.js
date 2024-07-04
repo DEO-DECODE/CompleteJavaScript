@@ -57,17 +57,17 @@ It returns a htmlCollection
 // getElementByTagName
 
 // Getting and Setting Attributes
-// let link1 = document.querySelector("a");
-// // console.log(link1);
-// console.log(link1.getAttribute("href"));
-// link1.setAttribute("href","https://www.w3schools.com/jsref/met_document_queryselector.asp");
+let link1 = document.querySelector("a");
+// console.log(link1);
+console.log(link1.getAttribute("href"));
+link1.setAttribute("href","https://www.w3schools.com/jsref/met_document_queryselector.asp");
 
-// link1.innerText="Go To W3Schools";
-// link1.style.textDecoration="none";
+link1.innerText="Go To W3Schools";
+link1.style.textDecoration="none";
 
-// let elem = document.querySelector("p");
+let elem = document.querySelector("p");
 // // elem.className="styled-div";
-// elem.setAttribute("class", "styled-div");
+elem.setAttribute("class", "styled-div");
 // console.log(elem.className);
 // console.log(elem.innerHTML);
 // console.log(elem.innerText);// Ignores white spaces

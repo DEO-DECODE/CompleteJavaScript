@@ -2,7 +2,7 @@ var fullName = "Dev Raj";
 var obj = {
   fullName: "Dev Raj Bhardwaj",
   prop: {
-    fullName: "Vishali Sharma",
+    fullName: "Vaibhav Sharma",
     getFullName: function () {
       return this.fullName;
     },

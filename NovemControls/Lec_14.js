@@ -202,20 +202,20 @@ let pa = new Promise((resolve, reject) => {
   }
 });
 
-// pa.then(
-//   (value) => {
-//     console.log(value);
-//   },
-//   (err) => {
-//     console.log(err);
-//   }
-// );
+pa.then(
+  (value) => {
+    console.log(value);
+  },
+  (err) => {
+    console.log(err);
+  }
+);
 
-pa.then((value) => {
-  console.log(value);
-}).catch((err) => {
-  console.log(err);
-});
+// pa.then((value) => {
+//   console.log(value);
+// }).catch((err) => {
+//   console.log(err);
+// });
 let arr = [];
 const fetchmoreData = (arr) => {
   return new Promise((resolve, reject) => {

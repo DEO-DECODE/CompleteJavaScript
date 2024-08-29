@@ -43,7 +43,7 @@ let obj = {
     console.log(this);
   },
 };
-// obj.print();
+obj.print();
 let obj2 = {
   name: "Abhimanyu",
   age: 19,
@@ -52,7 +52,7 @@ let obj2 = {
     console.log(this);
   },
 };
-// obj2.print2();
+obj2.print2();
 /*
 Arrow functions do not create their own "this" binding.
 In obj2 the print2 is an Arrow function , and Arrow function does not create their own This binding, due to which, This will point to what, it was actually pointing before, which was Window object.
@@ -73,7 +73,7 @@ let obj3 = {
     },
   },
 };
-// obj3.address.print3();
+obj3.address.print3();
 
 // Higher Order Functions
 // Callback Functions
